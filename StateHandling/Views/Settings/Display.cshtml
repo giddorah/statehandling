@@ -1,0 +1,16 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.Taghelpers
+@using StateHandling.Models
+@model SettingsDisplayVM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Settings</title>
+</head>
+<body>
+    <p>@Model.Greeting</p>
+    <br />
+    <p>Support E-mail: @Model.Email</p>
+    <p>Company Name: @Model.CompanyName</p>
+</body>
+</html>

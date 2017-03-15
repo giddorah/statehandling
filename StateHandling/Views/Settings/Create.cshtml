@@ -1,0 +1,24 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.Taghelpers
+@using StateHandling.Models
+@model SettingsCreateVM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Settings</title>
+</head>
+<body>
+    <form asp-controller="Settings" asp-action="Create">
+        <label asp-for="CompanyName"></label>
+        <input asp-for="CompanyName" />
+        <span asp-validation-for="CompanyName" style="color:Red"></span>
+        <br />
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" style="color:Red"></span>
+        <br />
+        <input type="submit" value="Submit" />
+
+    </form>
+</body>
+</html>
